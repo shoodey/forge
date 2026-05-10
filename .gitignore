@@ -1,0 +1,13 @@
+# Root-level scratch/notes
+/_*
+
+# Global / OS
+.DS_Store
+
+# Package manager
+node_modules/
+
+# Local env (never commit machine/local secrets)
+.env
+.env.*
+!.env.example
