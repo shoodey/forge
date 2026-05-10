@@ -7,6 +7,9 @@
 # Package manager
 node_modules/
 
+# Build system cache
+.turbo/
+
 # Local env (never commit machine/local secrets)
 .env
 .env.*
