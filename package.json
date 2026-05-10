@@ -1,5 +1,12 @@
 {
   "name": "@shoodey/forge",
   "version": "0.1.0",
-  "packageManager": "pnpm@11.0.9"
+  "packageManager": "pnpm@11.0.9",
+  "scripts": {
+    "prepare": "lefthook install",
+    "commit": "pnpm --dir ./tools/commit run commit"
+  },
+  "devDependencies": {
+    "lefthook": "^2.1.6"
+  }
 }
