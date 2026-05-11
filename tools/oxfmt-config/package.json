@@ -1,0 +1,12 @@
+{
+  "name": "@forge/oxfmt-config",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "format": "oxfmt --check --config ./oxfmt.config.ts",
+    "format:fix": "oxfmt --config ./oxfmt.config.ts"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.48.0"
+  }
+}

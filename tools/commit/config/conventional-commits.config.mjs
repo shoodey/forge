@@ -1,4 +1,8 @@
-const scopes = ["repo", "docs", "ci"];
+const scopes = [
+    "repo",
+    // Tools
+    "oxfmt",
+];
 
 const conventionalConfig = {
     scopes,

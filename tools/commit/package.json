@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "scripts": {
     "commit": "cz",
-    "commitlint": "commitlint --config ./config/commitlint.config.mjs"
+    "commitlint": "commitlint --config ./config/commitlint.config.mjs",
+    "format": "oxfmt --check --config ../oxfmt-config/oxfmt.config.ts",
+    "format:fix": "oxfmt --config ../oxfmt-config/oxfmt.config.ts"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.0.0",
     "@commitlint/config-conventional": "^21.0.0",
     "commitizen": "^4.3.1",
-    "cz-git": "^1.13.1"
+    "cz-git": "^1.13.1",
+    "oxfmt": "^0.48.0"
   },
   "config": {
     "commitizen": {

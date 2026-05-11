@@ -1,0 +1,22 @@
+{
+  "prettier.enable": false,
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "oxc.fmt.configPath": "tools/oxfmt-config/oxfmt.config.ts",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "[javascript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  }
+}

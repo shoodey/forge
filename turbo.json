@@ -1,5 +1,19 @@
 {
   "$schema": "https://turborepo.com/schema.json",
   "ui": "tui",
-  "tasks": {}
+  "tasks": {
+    "check": {
+      "dependsOn": ["format"]
+    },
+    "check:fix": {
+      "dependsOn": ["format:fix"]
+    },
+    "format": {
+      "inputs": ["$TURBO_DEFAULT$", "$TURBO_ROOT$/tools/oxfmt-config/oxfmt.config.ts"],
+      "outputs": []
+    },
+    "format:fix": {
+      "cache": false
+    }
+  }
 }

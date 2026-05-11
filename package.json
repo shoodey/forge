@@ -1,13 +1,17 @@
 {
   "name": "@shoodey/forge",
   "version": "0.1.0",
-  "packageManager": "pnpm@11.0.9",
   "scripts": {
     "prepare": "lefthook install",
-    "commit": "pnpm --dir ./tools/commit run commit"
+    "commit": "pnpm --dir ./tools/commit run commit",
+    "check": "turbo run check",
+    "check:fix": "turbo run check:fix",
+    "format": "turbo run format",
+    "format:fix": "turbo run format:fix"
   },
   "devDependencies": {
     "lefthook": "^2.1.6",
     "turbo": "^2.9.12"
-  }
+  },
+  "packageManager": "pnpm@11.0.9"
 }
