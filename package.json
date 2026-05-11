@@ -7,7 +7,10 @@
     "check": "turbo run check",
     "check:fix": "turbo run check:fix",
     "format": "turbo run format",
-    "format:fix": "turbo run format:fix"
+    "format:fix": "turbo run format:fix",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix"
   },
   "devDependencies": {
     "lefthook": "^2.1.6",

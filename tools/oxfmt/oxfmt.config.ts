@@ -13,4 +13,45 @@ export default defineConfig({
         },
     ],
     ignorePatterns: [],
+    sortImports: {
+        customGroups: [
+            {
+                groupName: "react-libs",
+                elementNamePattern: ["react", "react-**"],
+            },
+            {
+                groupName: "expo-libs",
+                elementNamePattern: ["expo", "expo-**"],
+            },
+            {
+                groupName: "forge-libs",
+                elementNamePattern: ["@forge/**"],
+            },
+            {
+                groupName: "alias",
+                elementNamePattern: ["~/**"],
+            },
+        ],
+        groups: [
+            // All type imports at the top
+            ["type-builtin", "type-external", "type-internal", "type-parent", "type-sibling", "type-index"],
+
+            { newlinesBetween: true },
+
+            "react-libs",
+            "expo-libs",
+            ["value-builtin", "value-external"],
+
+            { newlinesBetween: true },
+
+            "forge-libs",
+
+            { newlinesBetween: true },
+
+            "alias",
+            ["value-parent", "value-sibling", "value-index"],
+
+            "unknown",
+        ],
+    },
 });

@@ -4,6 +4,8 @@ packages:
 catalog:
   # Tools
   oxfmt: ^0.48.0
+  oxlint: ^1.63.0
+  oxlint-tsgolint: ^0.22.1
   typescript: ^6.0.3
 
 allowBuilds:

@@ -1,15 +1,18 @@
+import { RuleConfigSeverity } from "@commitlint/types";
+
 const scopes = [
     "repo",
     // Tools
-    "oxfmt",
     "typescript",
+    "oxfmt",
+    "oxlint",
 ];
 
 const conventionalConfig = {
     scopes,
     commitlint: {
-        "scope-empty": [2, "never"],
-        "scope-enum": [2, "always", scopes],
+        "scope-empty": [RuleConfigSeverity.Error, "never"],
+        "scope-enum": [RuleConfigSeverity.Error, "always", scopes],
     },
     czGit: {
         scopes,

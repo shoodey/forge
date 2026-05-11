@@ -1,19 +1,22 @@
 {
-  "name": "@forge/oxfmt-config",
+  "name": "@forge/oxlint-config",
   "version": "0.1.0",
   "files": [
-    "oxfmt.config.ts"
+    "config",
+    "oxlint.config.ts"
   ],
   "type": "module",
+  "exports": {
+    "./base": "./config/base.ts"
+  },
   "scripts": {
-    "format": "oxfmt --check --config ./oxfmt.config.ts",
-    "format:fix": "oxfmt --config ./oxfmt.config.ts",
+    "format": "oxfmt --check --config ../oxfmt/oxfmt.config.ts",
+    "format:fix": "oxfmt --config ../oxfmt/oxfmt.config.ts",
     "typecheck": "tsc --noEmit",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix"
   },
   "devDependencies": {
-    "@forge/oxlint-config": "workspace:*",
     "@forge/tsconfig": "workspace:*",
     "oxfmt": "catalog:",
     "oxlint": "catalog:",
@@ -21,6 +24,7 @@
     "typescript": "catalog:"
   },
   "peerDependencies": {
-    "oxfmt": "catalog:"
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:"
   }
 }

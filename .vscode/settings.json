@@ -4,8 +4,15 @@
   "prettier.enable": false,
   "editor.defaultFormatter": "oxc.oxc-vscode",
   "oxc.fmt.configPath": "tools/oxfmt/oxfmt.config.ts",
+  "oxc.enable.oxlint": true,
+  "oxc.lint.run": "onType",
+  "oxc.typeAware": true,
+  "oxc.fixKind": "safe_fix_or_suggestion",
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "explicit"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },

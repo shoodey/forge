@@ -10,6 +10,7 @@
     "format:fix": "oxfmt --config ../oxfmt/oxfmt.config.ts"
   },
   "devDependencies": {
-    "oxfmt": "catalog:"
+    "oxfmt": "catalog:",
+    "typescript": "catalog:"
   }
 }

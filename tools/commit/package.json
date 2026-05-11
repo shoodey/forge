@@ -1,22 +1,29 @@
 {
   "name": "@forge/commit",
   "version": "0.1.0",
+  "type": "module",
   "scripts": {
     "commit": "cz",
     "commitlint": "commitlint --config ./config/commitlint.config.mjs",
     "format": "oxfmt --check --config ../oxfmt/oxfmt.config.ts",
     "format:fix": "oxfmt --config ../oxfmt/oxfmt.config.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
   },
   "dependencies": {
     "@commitlint/cli": "^21.0.0",
     "@commitlint/config-conventional": "^21.0.0",
+    "@commitlint/types": "^21.0.0",
     "commitizen": "^4.3.1",
     "cz-git": "^1.13.1"
   },
   "devDependencies": {
+    "@forge/oxlint-config": "workspace:*",
     "@forge/tsconfig": "workspace:*",
     "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:",
     "typescript": "catalog:"
   },
   "config": {
