@@ -14,6 +14,8 @@
     /* Module hygiene */
     "isolatedModules": true,
     "resolveJsonModule": true,
+    // Lets workspace configs import .ts files directly (oxlint preset chain). Requires noEmit.
+    "allowImportingTsExtensions": true,
 
     /* Performance */
     "skipLibCheck": true,
