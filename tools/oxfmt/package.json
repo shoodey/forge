@@ -1,6 +1,9 @@
 {
-  "name": "@forge/oxfmt",
+  "name": "@forge/oxfmt-config",
   "version": "0.1.0",
+  "files": [
+    "oxfmt.config.ts"
+  ],
   "type": "module",
   "scripts": {
     "format": "oxfmt --check --config ./oxfmt.config.ts",
@@ -11,5 +14,8 @@
     "@forge/tsconfig": "workspace:*",
     "oxfmt": "catalog:",
     "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "oxfmt": "catalog:"
   }
 }

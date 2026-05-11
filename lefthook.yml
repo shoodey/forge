@@ -6,4 +6,4 @@ pre-commit:
 commit-msg:
   commands:
     commitlint:
-      run: pnpm --dir ./tools/commit exec commitlint --config ./config/commitlint.config.mjs --edit {1}
+      run: pnpm --dir ./tools/commit commitlint --edit {1}

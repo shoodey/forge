@@ -8,12 +8,14 @@
     "format:fix": "oxfmt --config ../oxfmt/oxfmt.config.ts",
     "typecheck": "tsc --noEmit"
   },
-  "devDependencies": {
+  "dependencies": {
     "@commitlint/cli": "^21.0.0",
     "@commitlint/config-conventional": "^21.0.0",
-    "@forge/tsconfig": "workspace:*",
     "commitizen": "^4.3.1",
-    "cz-git": "^1.13.1",
+    "cz-git": "^1.13.1"
+  },
+  "devDependencies": {
+    "@forge/tsconfig": "workspace:*",
     "oxfmt": "catalog:",
     "typescript": "catalog:"
   },

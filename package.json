@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "prepare": "lefthook install",
-    "commit": "pnpm --dir ./tools/commit run commit",
+    "commit": "pnpm --dir ./tools/commit commit",
     "check": "turbo run check",
     "check:fix": "turbo run check:fix",
     "format": "turbo run format",

@@ -25,22 +25,23 @@ importers:
         version: 2.9.12
 
   tools/commit:
-    devDependencies:
+    dependencies:
       '@commitlint/cli':
         specifier: ^21.0.0
         version: 21.0.0(@types/node@25.6.2)(conventional-commits-parser@6.4.0)(typescript@6.0.3)
       '@commitlint/config-conventional':
         specifier: ^21.0.0
         version: 21.0.0
-      '@forge/tsconfig':
-        specifier: workspace:*
-        version: link:../typescript
       commitizen:
         specifier: ^4.3.1
         version: 4.3.1(@types/node@25.6.2)(typescript@6.0.3)
       cz-git:
         specifier: ^1.13.1
         version: 1.13.1
+    devDependencies:
+      '@forge/tsconfig':
+        specifier: workspace:*
+        version: link:../typescript
       oxfmt:
         specifier: 'catalog:'
         version: 0.48.0
@@ -65,9 +66,6 @@ importers:
       oxfmt:
         specifier: 'catalog:'
         version: 0.48.0
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
 
 packages:
 
