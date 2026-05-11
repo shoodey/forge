@@ -4,6 +4,15 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    oxfmt:
+      specifier: ^0.48.0
+      version: 0.48.0
+    typescript:
+      specifier: ^6.0.3
+      version: 6.0.3
+
 importers:
 
   .:
@@ -23,9 +32,9 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^21.0.0
         version: 21.0.0
-      '@forge/oxfmt-config':
+      '@forge/tsconfig':
         specifier: workspace:*
-        version: link:../oxfmt-config
+        version: link:../typescript
       commitizen:
         specifier: ^4.3.1
         version: 4.3.1(@types/node@25.6.2)(typescript@6.0.3)
@@ -33,14 +42,32 @@ importers:
         specifier: ^1.13.1
         version: 1.13.1
       oxfmt:
-        specifier: ^0.48.0
+        specifier: 'catalog:'
         version: 0.48.0
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
 
-  tools/oxfmt-config:
+  tools/oxfmt:
+    devDependencies:
+      '@forge/tsconfig':
+        specifier: workspace:*
+        version: link:../typescript
+      oxfmt:
+        specifier: 'catalog:'
+        version: 0.48.0
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+
+  tools/typescript:
     devDependencies:
       oxfmt:
-        specifier: ^0.48.0
+        specifier: 'catalog:'
         version: 0.48.0
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
 
 packages:
 

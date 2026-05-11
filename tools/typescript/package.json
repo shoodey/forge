@@ -1,0 +1,12 @@
+{
+  "name": "@forge/tsconfig",
+  "version": "0.1.0",
+  "scripts": {
+    "format": "oxfmt --check --config ../oxfmt/oxfmt.config.ts",
+    "format:fix": "oxfmt --config ../oxfmt/oxfmt.config.ts"
+  },
+  "devDependencies": {
+    "oxfmt": "catalog:",
+    "typescript": "catalog:"
+  }
+}

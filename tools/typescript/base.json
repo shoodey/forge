@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    /* Strictness */
+    "strict": true, // Default as of TS 6.0
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* JS interop — typecheck .js/.cjs/.mjs alongside TS */
+    "allowJs": true,
+    "checkJs": true,
+
+    /* Module hygiene */
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+
+    /* Performance */
+    "skipLibCheck": true,
+
+    /* Emit & incremental — per-package via ${configDir} */
+    "noEmit": true,
+    "incremental": true,
+    // Under node_modules/ so oxfmt, Turbo, and git all auto-skip it (no per-package ignore rules needed)
+    "tsBuildInfoFile": "${configDir}/node_modules/.cache/tsbuildinfo.json"
+  }
+}

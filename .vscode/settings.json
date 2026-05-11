@@ -1,7 +1,9 @@
 {
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "tools/typescript/node_modules/typescript/lib",
   "prettier.enable": false,
   "editor.defaultFormatter": "oxc.oxc-vscode",
-  "oxc.fmt.configPath": "tools/oxfmt-config/oxfmt.config.ts",
+  "oxc.fmt.configPath": "tools/oxfmt/oxfmt.config.ts",
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
   "[javascript]": {

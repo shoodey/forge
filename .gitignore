@@ -9,6 +9,7 @@ node_modules/
 
 # Build system cache
 .turbo/
+.cache/
 
 # Local env (never commit machine/local secrets)
 .env

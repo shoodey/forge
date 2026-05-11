@@ -1,5 +1,10 @@
 packages:
   - "tools/*"
 
+catalog:
+  # Tools
+  oxfmt: ^0.48.0
+  typescript: ^6.0.3
+
 allowBuilds:
   lefthook: true

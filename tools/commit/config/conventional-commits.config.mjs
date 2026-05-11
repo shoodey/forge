@@ -2,6 +2,7 @@ const scopes = [
     "repo",
     // Tools
     "oxfmt",
+    "typescript",
 ];
 
 const conventionalConfig = {

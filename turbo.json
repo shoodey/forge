@@ -3,17 +3,21 @@
   "ui": "tui",
   "tasks": {
     "check": {
-      "dependsOn": ["format"]
+      "dependsOn": ["format", "typecheck"]
     },
     "check:fix": {
       "dependsOn": ["format:fix"]
     },
     "format": {
-      "inputs": ["$TURBO_DEFAULT$", "$TURBO_ROOT$/tools/oxfmt-config/oxfmt.config.ts"],
+      "inputs": ["$TURBO_DEFAULT$", "$TURBO_ROOT$/tools/oxfmt/oxfmt.config.ts"],
       "outputs": []
     },
     "format:fix": {
       "cache": false
+    },
+    "typecheck": {
+      "inputs": ["$TURBO_DEFAULT$", "$TURBO_ROOT$/tools/typescript/*.json"],
+      "outputs": ["node_modules/.cache/tsbuildinfo.json"]
     }
   }
 }

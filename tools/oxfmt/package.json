@@ -1,0 +1,15 @@
+{
+  "name": "@forge/oxfmt",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "format": "oxfmt --check --config ./oxfmt.config.ts",
+    "format:fix": "oxfmt --config ./oxfmt.config.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@forge/tsconfig": "workspace:*",
+    "oxfmt": "catalog:",
+    "typescript": "catalog:"
+  }
+}
