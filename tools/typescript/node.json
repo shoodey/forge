@@ -6,9 +6,9 @@
     "target": "ES2024",
     "lib": ["ES2024"],
 
-    /* Module system (Node ESM/CJS interop) */
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    /* Module system — bundler resolution lets tsx/Vite/esbuild handle extension-less imports */
+    "module": "ESNext",
+    "moduleResolution": "bundler",
 
     /* Module hygiene */
     "verbatimModuleSyntax": true
